@@ -11,12 +11,8 @@ export default function Footer() {
       </div>
       <div className="footer-inner" style={{ position: 'relative', zIndex: 1 }}>
         <div className="footer-brand">
-          <Link href="/" className="navbar-logo">
-            <Image src="/sansfond.png" alt="StayZen" width={80} height={80} />
-            <div>
-              <span className="navbar-logo-text">STAYZEN</span>
-              <span className="navbar-logo-sub">Conciergerie</span>
-            </div>
+          <Link href="/" className="navbar-logo" style={{ height: 'auto' }}>
+            <Image src="/sansfond.png" alt="StayZen" width={100} height={100} />
           </Link>
           <p>
             La conciergerie nouvelle génération. 
