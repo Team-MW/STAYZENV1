@@ -51,7 +51,12 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <span>© 2026 StayZen Conciergerie. Tous droits réservés.</span>
+        <span>
+          © 2026 StayZen Conciergerie. Tous droits réservés. |{" "}
+          <Link href="/mentions-legales" className="legal-link">
+            Mentions Légales
+          </Link>
+        </span>
         <div className="footer-socials">
           <a href="#" target="_blank">INSTAGRAM</a>
           <a href="#" target="_blank">LINKEDIN</a>
