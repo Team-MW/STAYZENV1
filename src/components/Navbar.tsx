@@ -23,7 +23,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""}`} id="navbar">
+    <nav className={`navbar ${scrolled ? "scrolled" : ""} ${menuOpen ? "nav-open" : ""}`} id="navbar">
       <Link href="/" className="navbar-logo">
         <Image src="/sansfond.png" alt="StayZen" width={130} height={130} priority />
       </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
       </ul>
 
       <button
-        className="menu-toggle"
+        className={`menu-toggle ${menuOpen ? "open" : ""}`}
         id="menu-toggle"
         aria-label="Menu"
         onClick={() => setMenuOpen((p) => !p)}
