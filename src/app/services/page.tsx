@@ -65,7 +65,7 @@ export default function ServicesPage() {
       <section className="hero" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div className="hero-bg reveal-image" style={{ position: 'absolute' }}>
           <Image
-            src="/services_hero_bg.png"
+            src="/services_hero_bg_luxury.png"
             alt="Services Hero"
             fill
             priority
