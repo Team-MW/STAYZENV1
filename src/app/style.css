@@ -71,6 +71,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
+.navbar.open {
+  backdrop-filter: none !important;
+  background: transparent !important;
+  transition: none !important;
+}
+
 
 
 .navbar-logo {
@@ -1054,6 +1060,36 @@ h1, h2, h3, h4, h5, h6 {
   .showcase-inner { grid-template-columns: 1fr; }
   .showcase-image { height: 400px; }
   .footer-inner { grid-template-columns: 1fr; }
+
+  /* PRICING CARD RESPONSIVE */
+  .pricing-card {
+    padding: 2rem 1.5rem !important;
+    margin-top: 2rem;
+  }
+  .pricing-card h3 {
+    font-size: 2rem !important;
+  }
+  .pricing-card h3 span {
+    font-size: 1.3rem !important;
+  }
+  
+  /* REVENUE SIMULATOR RESPONSIVE */
+  .simulator-card {
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+  }
+  .simulator-value {
+    font-size: 2rem;
+  }
+  .simulator-results {
+    padding: 1.5rem;
+  }
+  .result-item {
+    font-size: 0.9rem;
+  }
+  .result-item.total {
+    font-size: 1.1rem;
+  }
 }
 /* PROCESS SECTION UPGRADE */
 .process-grid {
@@ -1293,9 +1329,9 @@ h1, h2, h3, h4, h5, h6 {
     gap: 3rem;
     z-index: 1000;
     opacity: 0;
-    visibility: hidden;
+    pointer-events: none;
     transform: translateY(-20px);
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1303,7 +1339,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .navbar-links.open {
     opacity: 1;
-    visibility: visible;
+    pointer-events: auto;
     transform: translateY(0);
   }
   
