@@ -18,12 +18,15 @@ export default function MentionsLegales() {
             <section>
               <h2 style={{ color: 'var(--text-primary)', fontSize: '1.5rem', marginBottom: '1rem' }}>1. Éditeur du site</h2>
               <p>
-                Le présent site internet est édité par la société <strong>StayZen Conciergerie</strong>.<br />
-                Statut : Société par Actions Simplifiée (SAS)<br />
-                Siège social : [Adresse de l'entreprise]<br />
-                SIRET : [Numéro SIRET]<br />
-                Directeur de la publication : [Nom du directeur]<br />
-                Contact : contact@stayzen.fr | 06 00 00 00 00
+                Le présent site internet est édité par <strong>VARELA CEDRIC (STAYZEN CONCIERGERIE)</strong>.<br />
+                <strong>SIREN :</strong> 894 353 275<br />
+                <strong>Adresse :</strong> 20 RUE MARIE-LOUISE DUBREIL-JACOTIN, 31400 TOULOUSE<br />
+                <strong>Activité :</strong> Hébergement touristique et autre hébergement de courte durée<br />
+                <strong>Effectif :</strong> 0 salarié (donnée 2026)<br />
+                <strong>Première création :</strong> 15/02/2021<br />
+                <strong>Réouverture :</strong> 02/07/2022<br />
+                <strong>Dirigeant :</strong> Varela CEDRIC<br />
+                <strong>Contact :</strong> contact@stayzen.fr | 06 00 00 00 00
               </p>
             </section>
 
