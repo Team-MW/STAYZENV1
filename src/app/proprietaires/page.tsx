@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import ScrollReveal from "@/components/ScrollReveal";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
+import Marquee from "@/components/Marquee";
 
 const PROPRIETAIRES_FAQ = [
   {
@@ -55,6 +56,8 @@ export default function ProprietairesPage() {
           </p>
         </div>
       </section>
+
+      <Marquee />
 
       <section className="section" style={{ paddingTop: '4rem' }}>
         <div className="container">

@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   z-index: 1000;
   padding: 0 4rem;
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;

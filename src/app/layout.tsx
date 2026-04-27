@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./style.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import LoadingScreen from "@/components/LoadingScreen";
 
 export const metadata: Metadata = {
   title: "StayZen Conciergerie — Gestion Locative Premium",
@@ -24,7 +23,6 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        <LoadingScreen />
         {children}
         <WhatsAppButton />
       </body>

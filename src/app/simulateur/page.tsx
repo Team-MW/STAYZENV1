@@ -3,6 +3,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import RevenueSimulator from "@/components/RevenueSimulator";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
+import Marquee from "@/components/Marquee";
 
 const SIMULATEUR_FAQ = [
   {
@@ -59,6 +60,8 @@ export default function SimulatorPage() {
           </div>
         </div>
       </section>
+
+      <Marquee />
 
       <section className="section" style={{ paddingTop: '0' }}>
         <div className="container">
