@@ -154,16 +154,57 @@ h1, h2, h3, h4, h5, h6 {
   width: 120px;
   height: 120px;
   color: var(--gold);
-  opacity: 0.2;
-  filter: blur(1px) drop-shadow(0 0 30px var(--gold-glow));
+  opacity: 0.8;
+  filter: drop-shadow(0 0 25px var(--gold));
   animation: float-moon 8s ease-in-out infinite;
   pointer-events: none;
   z-index: 5;
 }
 
+.floating-moon-left {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 100px;
+  height: 100px;
+  color: var(--gold);
+  opacity: 0.6;
+  filter: blur(0.5px) drop-shadow(0 0 20px var(--gold));
+  animation: float-moon-alt 10s ease-in-out infinite reverse;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-moon-bottom-right {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 150px;
+  height: 150px;
+  color: var(--gold);
+  opacity: 0.5;
+  filter: blur(1px) drop-shadow(0 0 30px var(--gold));
+  animation: float-moon 12s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-moon svg,
+.floating-moon-left svg,
+.floating-moon-bottom-right svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 @keyframes float-moon {
   0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
   50% { transform: translateY(-20px) rotate(10deg) scale(1.05); }
+}
+
+@keyframes float-moon-alt {
+  0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+  50% { transform: translateY(20px) rotate(-10deg) scale(1.1); }
 }
 
 #offre {
@@ -469,6 +510,59 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(255,255,255,0.1);
 }
 
+/* SERVICES GRID (SERVICES / PROPRIETAIRES PAGES) */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.service-card {
+  background: var(--dark-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  background: var(--dark-light);
+}
+
+.service-icon {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.service-card h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
 /* SHOWCASE */
 .showcase {
   padding: 8rem 4rem;
@@ -706,16 +800,40 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
-/* REVEAL */
+/* REVEAL - GSAP/WEBFLOW STYLE */
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
+  transform: translateY(40px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.reveal-text {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transform: translateY(30px);
+  opacity: 0;
+  transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.175, 1), transform 1.2s cubic-bezier(0.77, 0, 0.175, 1), opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-text.visible {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal-image {
+  clip-path: inset(100% 0 0 0);
+  transform: scale(1.05);
+  transition: clip-path 1.5s cubic-bezier(0.77, 0, 0.175, 1), transform 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-image.visible {
+  clip-path: inset(0 0 0 0);
+  transform: scale(1);
 }
 
 /* FOOTER */

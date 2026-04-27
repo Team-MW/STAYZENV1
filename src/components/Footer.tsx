@@ -3,8 +3,13 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-inner">
+    <footer className="footer" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div className="floating-moon-bottom-right" style={{ bottom: '20%', right: '5%', opacity: 0.15 }}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a7 7 0 1 1-7.64-7.64c.44.06.9.1 1.36.1A9 9 0 0 0 12 3z"/>
+        </svg>
+      </div>
+      <div className="footer-inner" style={{ position: 'relative', zIndex: 1 }}>
         <div className="footer-brand">
           <Link href="/" className="navbar-logo">
             <Image src="/logo.jpeg" alt="StayZen" width={40} height={40} />

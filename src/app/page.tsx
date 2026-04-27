@@ -73,7 +73,7 @@ export default function Home() {
 
       {/* ===== HERO ===== */}
       <section className="hero" id="hero">
-        <div className="hero-bg" style={{ position: 'absolute' }}>
+        <div className="hero-bg reveal-image" style={{ position: 'absolute' }}>
           <Image
             src="/hero.png"
             alt="StayZen Hero"
@@ -89,16 +89,16 @@ export default function Home() {
           </svg>
         </div>
         <div className="hero-content">
-          <h1>
+          <h1 className="reveal-text">
             Gestion complète
             <br />
             <span className="gold">Airbnb & Booking</span>
           </h1>
-          <p className="hero-sub">
+          <p className="hero-sub reveal" style={{ transitionDelay: '0.2s' }}>
             Maximisez vos revenus locatifs sans lever le petit doigt. 
             Service clé en main incluant maintenance et linge.
           </p>
-          <div className="hero-actions">
+          <div className="hero-actions reveal" style={{ transitionDelay: '0.4s' }}>
             <a href="/simulateur" className="btn-primary">
               Estimer mes revenus
             </a>
@@ -113,9 +113,9 @@ export default function Home() {
       {/* ===== SERVICES ===== */}
       <section className="section section-light reveal" id="services">
         <div className="container">
-          <span className="section-label">Nos Services</span>
-          <h2 className="section-title">Tout inclus. Pas de stress.</h2>
-          <p className="section-desc">
+          <span className="section-label reveal-text">Nos Services</span>
+          <h2 className="section-title reveal-text" style={{ transitionDelay: '0.1s' }}>Tout inclus. Pas de stress.</h2>
+          <p className="section-desc reveal" style={{ transitionDelay: '0.2s' }}>
             Une gestion transparente et efficace pour vos locations courte durée.
           </p>
           <div className="services-bento-grid">
@@ -173,24 +173,68 @@ export default function Home() {
         </div>
         <div className="container">
           <div style={{ textAlign: 'center' }}>
-            <span className="section-label">Notre Offre</span>
-            <h2 className="section-title">Une commission unique.</h2>
-            <p className="section-desc" style={{ margin: '0 auto 2rem' }}>
+            <span className="section-label reveal-text">Notre Offre</span>
+            <h2 className="section-title reveal-text" style={{ transitionDelay: '0.1s' }}>Une commission unique.</h2>
+            <p className="section-desc reveal" style={{ margin: '0 auto 2rem', transitionDelay: '0.2s' }}>
               Un tarif clair, tout inclus. Les frais de ménage sont à la charge du voyageur.
             </p>
           </div>
-          <div className="pricing-card">
-            <div className="pricing-value">24<span className="pricing-unit">%</span></div>
-            <p style={{ color: 'var(--gold)', fontWeight: 700, marginTop: '1rem' }}>Commission sur les revenus</p>
-            <ul className="pricing-features">
-              <li>Gestion complète & Conciergerie</li>
-              <li>Photos pro & Création d'annonce</li>
-              <li>Stratégie de prix dynamique</li>
-              <li>Linge hôtelier inclus (renouvelé par nos soins)</li>
-              <li>Consommables & Kit d'accueil (café, lessive...)</li>
-              <li>Maintenance & Réparations courantes</li>
+          <div className="pricing-card" style={{ textAlign: 'left', padding: '3.5rem', maxWidth: '650px' }}>
+            <h3 style={{ fontSize: '2.8rem', fontWeight: 900, marginBottom: '0.5rem', color: 'white', lineHeight: 1.1 }}>
+              24% <span style={{ fontSize: '1.8rem', fontWeight: 700 }}>de commission</span>
+            </h3>
+            <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '2.5rem' }}>Incluant</p>
+            
+            <ul className="pricing-features" style={{ margin: 0 }}>
+              <li>
+                <div>
+                  <strong>Gestion complète de conciergerie</strong>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Création d'annonce</strong> <span style={{ color: 'var(--text-muted)' }}>( photos professionnelles inclus )</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Stratégie de prix dynamique</strong>
+                </div>
+              </li>
+              <li style={{ alignItems: 'flex-start' }}>
+                <div>
+                  <strong>Fourniture de linge hotelier</strong>
+                  <div style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginTop: '0.3rem' }}>( renouvellement à notre charge en cas de dégradation etc )</div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Consommable</strong>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Kit d'accueil voyageurs</strong> <span style={{ color: 'var(--text-muted)' }}>( café, dosette de lessive etc )</span>
+                </div>
+              </li>
+              <li style={{ alignItems: 'flex-start' }}>
+                <div>
+                  <strong>Service de maintenance, prise en charge des problèmes courants</strong>
+                  <div style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginTop: '0.3rem' }}>( dégradation, plomberie, électroménager, etc. )</div>
+                </div>
+              </li>
             </ul>
-            <a href="/contact" className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+
+            <div style={{ marginTop: '3rem', paddingTop: '2.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+              <p style={{ fontSize: '1.2rem', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
+                Les frais de ménage et de blanchisserie sont
+              </p>
+              <p style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--gold)' }}>
+                À la charge du voyageur
+              </p>
+            </div>
+            
+            <a href="/contact" className="btn-primary" style={{ width: '100%', justifyContent: 'center', marginTop: '3rem', display: 'flex' }}>
               Confier mon bien
             </a>
           </div>
@@ -212,8 +256,13 @@ export default function Home() {
       </section>
 
       {/* ===== PROCESS ===== */}
-      <section className="section reveal" id="processus">
-        <div className="container">
+      <section className="section reveal" id="processus" style={{ position: 'relative' }}>
+        <div className="floating-moon-left">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a7 7 0 1 1-7.64-7.64c.44.06.9.1 1.36.1A9 9 0 0 0 12 3z"/>
+          </svg>
+        </div>
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <span className="section-label">Fonctionnement</span>
           <h2 className="section-title">En 4 étapes simples.</h2>
           <div className="process-grid">
