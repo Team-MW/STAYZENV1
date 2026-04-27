@@ -1,0 +1,102 @@
+/* PROCESS SECTION UPGRADE */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.process-step {
+  padding: 3.5rem 2.5rem;
+  background: var(--dark-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 32px;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 320px;
+}
+
+.process-step:hover {
+  background: var(--dark-light);
+  transform: translateY(-12px);
+  border-color: var(--gold);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.process-number {
+  font-family: 'Outfit', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+  position: absolute;
+  top: 2rem;
+  left: 2.5rem;
+  opacity: 0.8;
+}
+
+.process-icon {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 2.5rem;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.process-step:hover .process-icon {
+  opacity: 1;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.process-step h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  position: relative;
+  z-index: 2;
+}
+
+.process-step p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+/* Light Mode Overrides */
+.section-light .process-step {
+  background: white;
+  border-color: rgba(0,0,0,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.section-light .process-step h3 {
+  color: var(--light-text-primary);
+}
+
+.section-light .process-step p {
+  color: var(--light-text-secondary);
+}
+
+.section-light .process-step:hover {
+  background: white;
+  border-color: var(--gold);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 1024px) {
+  .process-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .process-grid { grid-template-columns: 1fr; }
+  .process-step { min-height: 280px; }
+}
