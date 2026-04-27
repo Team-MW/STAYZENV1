@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="footer-inner" style={{ position: 'relative', zIndex: 1 }}>
         <div className="footer-brand">
           <Link href="/" className="navbar-logo">
-            <Image src="/logo.jpeg" alt="StayZen" width={40} height={40} />
+            <Image src="/sansfond.png" alt="StayZen" width={80} height={80} />
             <div>
               <span className="navbar-logo-text">STAYZEN</span>
               <span className="navbar-logo-sub">Conciergerie</span>

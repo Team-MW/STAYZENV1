@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import ScrollReveal from "@/components/ScrollReveal";
 import Footer from "@/components/Footer";
@@ -69,9 +70,16 @@ export default function ContactPage() {
                 textAlign: 'center',
                 padding: '2rem'
               }}>
-                <div>
-                  <p style={{ color: 'var(--light-text-primary)', fontWeight: 600, marginBottom: '2rem' }}>Interface Calendly Intégrée</p>
-                  <a href="https://calendly.com" target="_blank" className="btn-primary">Choisir une date</a>
+                <div style={{ width: '100%', height: '100%', minHeight: '700px', background: 'transparent' }}>
+                  <div 
+                    className="calendly-inline-widget" 
+                    data-url="https://calendly.com/desosocalendly/30min" 
+                    style={{ minWidth: '320px', height: '100%', width: '100%' }}
+                  ></div>
+                  <Script 
+                    src="https://assets.calendly.com/assets/external/widget.js" 
+                    strategy="lazyOnload"
+                  />
                 </div>
               </div>
             </div>
