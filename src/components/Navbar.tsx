@@ -25,11 +25,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`} id="navbar">
       <Link href="/" className="navbar-logo">
-        <Image src="/sansfond.png" alt="StayZen" width={80} height={80} priority />
-        <div>
-          <span className="navbar-logo-text">STAYZEN</span>
-          <span className="navbar-logo-sub">Conciergerie</span>
-        </div>
+        <Image src="/sansfond.png" alt="StayZen" width={130} height={130} priority />
       </Link>
 
       <ul className={`navbar-links ${menuOpen ? "open" : ""}`} id="nav-links">
