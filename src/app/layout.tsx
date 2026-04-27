@@ -3,14 +3,13 @@ import "./style.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "StayZen Conciergerie — Gestion Locative Premium",
+  title: "StayZen Conciergerie — Gestion Locative Premium Airbnb",
   description:
-    "StayZen Conciergerie gère vos locations courte durée avec excellence. Service clé en main pour propriétaires Airbnb exigeants.",
+    "Optimisez vos revenus locatifs Airbnb & Booking sans contraintes. StayZen Conciergerie offre une gestion complète, ménage 5 étoiles et maintenance 24/7.",
   keywords: [
-    "conciergerie",
-    "gestion locative",
-    "Airbnb",
-    "location courte durée",
+    "conciergerie luxe",
+    "gestion locative airbnb",
+    "conciergerie premium",
     "StayZen",
   ],
 };
