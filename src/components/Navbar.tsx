@@ -23,7 +23,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""} ${menuOpen ? "nav-open" : ""}`} id="navbar">
+    <nav className={`navbar ${scrolled ? "scrolled" : ""} ${menuOpen ? "open" : ""}`} id="navbar">
       <Link href="/" className="navbar-logo">
         <Image src="/sansfond.png" alt="StayZen" width={130} height={130} priority />
       </Link>
@@ -41,7 +41,11 @@ export default function Navbar() {
           </li>
         ))}
         <li>
-          <Link href="/contact" className="navbar-cta" onClick={() => setMenuOpen(false)}>
+          <Link 
+            href="/contact" 
+            className="navbar-cta" 
+            onClick={() => setMenuOpen(false)}
+          >
             Nous Contacter
           </Link>
         </li>
@@ -49,9 +53,10 @@ export default function Navbar() {
 
       <button
         className={`menu-toggle ${menuOpen ? "open" : ""}`}
-        id="menu-toggle"
+        id="menu-toggle-btn"
         aria-label="Menu"
-        onClick={() => setMenuOpen((p) => !p)}
+        onClick={() => setMenuOpen(!menuOpen)}
+        style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}
       >
         <span />
         <span />

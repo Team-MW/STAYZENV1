@@ -71,6 +71,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
+
+
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -1012,6 +1014,41 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-links { display: none; }
   .section { padding: 4rem 2rem; }
   .hero h1 { font-size: 3rem; }
+  .hero-actions {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 1.2rem 2rem;
+  }
+  .diagonal-marquee-section {
+    height: 180px;
+    margin: 2rem 0;
+  }
+  .diagonal-band {
+    padding: 1.2rem 0;
+    width: 200%;
+    left: -50%;
+  }
+  .diagonal-band.gold {
+    transform: rotate(-3deg) translateY(-20px);
+  }
+  .diagonal-band.cream {
+    transform: rotate(2deg) translateY(20px);
+  }
+  .diagonal-band span {
+    font-size: 1.8rem;
+  }
+  .diagonal-band .dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 1.5rem;
+  }
   .services-bento-grid { grid-template-columns: 1fr; }
   .bento-card.bento-large, .bento-card.bento-small { grid-column: span 1; min-height: auto; padding: 2rem; }
   .showcase-inner { grid-template-columns: 1fr; }
@@ -1130,13 +1167,14 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.8s;
+  animation: luxuryFadeOut 0.8s cubic-bezier(0.77, 0, 0.175, 1) 1.5s forwards;
+  pointer-events: auto;
 }
 
-.loading-screen.fade-out {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+@keyframes luxuryFadeOut {
+  0% { opacity: 1; visibility: visible; pointer-events: auto; }
+  99% { opacity: 0; visibility: visible; pointer-events: none; }
+  100% { opacity: 0; visibility: hidden; pointer-events: none; }
 }
 
 .loading-content {
@@ -1147,12 +1185,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .loading-logo {
-  width: 150px;
-  height: 150px;
   animation: luxury-pulse 2s ease-in-out infinite alternate;
 }
 
-.loading-bar-container {
+.loading-bar {
   width: 200px;
   height: 2px;
   background: rgba(255, 255, 255, 0.1);
@@ -1161,12 +1197,15 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.loading-bar {
-  width: 100%;
+.loading-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  background: var(--gold);
-  transform: translateX(-100%);
-  animation: luxury-progress 2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  background: var(--gold-gradient, var(--gold));
+  width: 100%;
+  transform-origin: left;
+  animation: luxury-progress 1.5s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
 }
 
 @keyframes luxury-pulse {
@@ -1219,7 +1258,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .navbar {
     padding: 0 2rem;
     height: 70px;
@@ -1230,8 +1269,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 2rem;
   }
   
+  .navbar-logo {
+    z-index: 1001;
+  }
+  
   .menu-toggle {
     display: flex;
+    z-index: 1001;
   }
   
   .navbar-links {
@@ -1240,23 +1284,32 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(10, 10, 10, 0.98);
     backdrop-filter: blur(20px);
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
     z-index: 1000;
-    transform: translateX(100%);
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
   .navbar-links.open {
-    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
   
   .navbar-links a {
     font-size: 1.5rem;
+    font-weight: 600;
   }
   
   .navbar-cta {
