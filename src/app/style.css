@@ -54,19 +54,21 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   z-index: 1000;
   padding: 0 4rem;
-  height: 60px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.8) 0%, rgba(10, 10, 10, 0) 100%);
 }
 
 .navbar.scrolled {
-  background: rgba(10, 10, 10, 0.8);
-  backdrop-filter: blur(10px);
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(15px);
   padding: 0 4rem;
-  height: 60px;
-  border-bottom: 1px solid var(--glass-border);
+  height: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-logo {
@@ -77,40 +79,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-logo img {
-  height: 100% !important;
+  height: 90% !important;
   width: auto !important;
-  max-height: 100%;
   object-fit: contain;
-}
-
-.navbar-logo-text {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: 0.1em;
-  color: var(--gold);
-}
-
-.navbar-logo-sub {
-  display: block;
-  font-size: 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--text-muted);
+  transition: all 0.4s ease;
 }
 
 .navbar-links {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 2.5rem;
   list-style: none;
 }
 
 .navbar-links a {
   text-decoration: none;
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  transition: color 0.3s ease;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
 }
 
 .navbar-links a:hover, .navbar-links a.active {
@@ -118,11 +106,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-cta {
-  background: var(--gold);
+  background: var(--gold-gradient, var(--gold));
   color: var(--dark) !important;
-  padding: 0.6rem 1.5rem;
+  padding: 0.8rem 1.8rem;
   border-radius: 50px;
   font-weight: 600;
+  box-shadow: var(--gold-shadow);
+  transition: all 0.3s ease;
+}
+
+.navbar-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(184, 146, 74, 0.4);
 }
 
 /* HERO */
