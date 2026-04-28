@@ -12,7 +12,7 @@ const SIMULATEUR_FAQ = [
   },
   {
     q: "L'estimation inclut-elle les frais de ménage ?",
-    a: "Non, les frais de ménage sont payés directement par les voyageurs. L'estimation porte sur le revenu de la nuitée, qui est la base sur laquelle notre commission de 24% est prélevée.",
+    a: "Non, les frais de ménage sont payés directement par les voyageurs. L'estimation porte sur le revenu de la nuitée, qui est la base sur laquelle notre commission de 22% est prélevée.",
   },
   {
     q: "Puis-je espérer plus que le montant estimé ?",
@@ -55,7 +55,7 @@ export default function SimulatorPage() {
             <h1 className="section-title">Estimez vos futurs revenus locatifs.</h1>
             <p className="section-desc" style={{ margin: '0 auto' }}>
               Utilisez notre outil pour découvrir votre gain net mensuel avec StayZen. 
-              Notre commission de 24% inclut absolument tout.
+              Notre commission de 22% inclut absolument tout.
             </p>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function SimulatorPage() {
             </div>
             <div className="pricing-card" style={{ textAlign: 'left', padding: '3.5rem', maxWidth: '650px', margin: '0 auto' }}>
               <h3 style={{ fontSize: '2.8rem', fontWeight: 900, marginBottom: '0.5rem', color: 'white', lineHeight: 1.1 }}>
-                24% <span style={{ fontSize: '1.8rem', fontWeight: 700 }}>de commission</span>
+                22% <span style={{ fontSize: '1.8rem', fontWeight: 700 }}>de commission</span>
               </h3>
               <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '2.5rem' }}>Incluant</p>
               

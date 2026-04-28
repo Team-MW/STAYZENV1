@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 export default function RevenueSimulator() {
   const [revenue, setRevenue] = useState(2000);
   const [mounted, setMounted] = useState(false);
-  const commissionRate = 0.24; // Updated to 24%
+  const commissionRate = 0.22; // Updated to 22%
 
   useEffect(() => {
     setMounted(true);
@@ -41,7 +41,7 @@ export default function RevenueSimulator() {
           <strong>{revenue.toLocaleString()} €</strong>
         </div>
         <div className="result-item highlight">
-          <span>Commission StayZen (24%)</span>
+          <span>Commission StayZen (22%)</span>
           <strong>- {commissionAmount.toLocaleString()} €</strong>
         </div>
         <div className="result-divider"></div>
@@ -52,7 +52,7 @@ export default function RevenueSimulator() {
       </div>
       
       <p className="simulator-note">
-        *Basé sur une commission de 24% incluant gestion, linge, consommables et maintenance. 
+        *Basé sur une commission de 22% incluant gestion, linge, consommables et maintenance. 
         Les frais de ménage sont à la charge du voyageur.
       </p>
     </div>

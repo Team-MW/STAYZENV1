@@ -192,7 +192,7 @@ export default function Home() {
           </div>
           <div className="pricing-card" style={{ textAlign: 'left', padding: '3.5rem', maxWidth: '650px' }}>
             <h3 style={{ fontSize: '2.8rem', fontWeight: 900, marginBottom: '0.5rem', color: 'white', lineHeight: 1.1 }}>
-              24% <span style={{ fontSize: '1.8rem', fontWeight: 700 }}>de commission</span>
+              22% <span style={{ fontSize: '1.8rem', fontWeight: 700 }}>de commission</span>
             </h3>
             <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '2.5rem' }}>Incluant</p>
             
