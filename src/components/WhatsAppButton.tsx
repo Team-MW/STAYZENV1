@@ -1,7 +1,7 @@
 "use client";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "33600000000"; // À remplacer par le numéro client
+  const phoneNumber = "33686253611"; // Updated to client's number
   const message = "Bonjour StayZen, j'aimerais avoir des informations sur vos services.";
   
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

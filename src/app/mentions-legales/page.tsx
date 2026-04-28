@@ -26,7 +26,7 @@ export default function MentionsLegales() {
                 <strong>Première création :</strong> 15/02/2021<br />
                 <strong>Réouverture :</strong> 02/07/2022<br />
                 <strong>Dirigeant :</strong> Varela CEDRIC<br />
-                <strong>Contact :</strong> contact@stayzen.fr | 06 00 00 00 00
+                <strong>Contact :</strong> contact@stayzen.fr | 06 86 25 36 11
               </p>
             </section>
 
