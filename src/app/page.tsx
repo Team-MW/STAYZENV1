@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import RevenueSimulator from "@/components/RevenueSimulator";
 import Footer from "@/components/Footer";
 import Marquee from "@/components/Marquee";
-import { TrendingUp, Camera, Key, Banknote, Home as HomeIcon, Shirt, Wrench } from "lucide-react";
+import { TrendingUp, Camera, Key, Banknote, Home as HomeIcon, BedDouble, Wrench } from "lucide-react";
 
 const MARQUEE_ITEMS = [
   "Gestion Complète",
@@ -29,7 +29,7 @@ const SERVICES = [
     desc: "Shooting professionnel et optimisation SEO pour une visibilité maximale.",
   },
   {
-    icon: <Shirt size={24} />,
+    icon: <BedDouble size={24} />,
     title: "Linge & Consommables",
     desc: "Fourniture du linge hôtelier et des kits d'accueil (café, lessive, etc.).",
   },
@@ -151,7 +151,7 @@ export default function Home() {
             <div className="bento-card bento-small bento-dark reveal" style={{ transitionDelay: '0.2s' }}>
               <div className="bento-content">
                 <div className="bento-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shirt"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-bed-double"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 14h20"/><path d="M6 8v4"/><path d="M10 8v4"/><path d="M14 8v4"/><path d="M18 8v4"/></svg>
                 </div>
                 <h3>Linge & Kits</h3>
                 <p>Fourniture du linge hôtelier et des consommables.</p>
