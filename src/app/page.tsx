@@ -4,6 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import RevenueSimulator from "@/components/RevenueSimulator";
 import Footer from "@/components/Footer";
 import Marquee from "@/components/Marquee";
+import { TrendingUp, Camera, Key, Banknote, Home as HomeIcon, Shirt, Wrench } from "lucide-react";
 
 const MARQUEE_ITEMS = [
   "Gestion Complète",
@@ -18,22 +19,22 @@ const MARQUEE_ITEMS = [
 
 const SERVICES = [
   {
-    icon: "🏠",
+    icon: <HomeIcon size={24} />,
     title: "Gestion Complète",
     desc: "De la création d'annonce à la gestion des séjours, nous pilotons tout.",
   },
   {
-    icon: "📸",
+    icon: <Camera size={24} />,
     title: "Photos & Annonce",
     desc: "Shooting professionnel et optimisation SEO pour une visibilité maximale.",
   },
   {
-    icon: "🧺",
+    icon: <Shirt size={24} />,
     title: "Linge & Consommables",
     desc: "Fourniture du linge hôtelier et des kits d'accueil (café, lessive, etc.).",
   },
   {
-    icon: "🛠️",
+    icon: <Wrench size={24} />,
     title: "Maintenance",
     desc: "Prise en charge des problèmes courants (plomberie, électroménager).",
   },
@@ -42,25 +43,25 @@ const SERVICES = [
 const STEPS = [
   {
     num: "01",
-    icon: "📈",
+    icon: <TrendingUp size={40} color="var(--gold)" />,
     title: "Estimation",
     desc: "Analyse gratuite et précise de votre potentiel locatif mensuel.",
   },
   {
     num: "02",
-    icon: "📸",
+    icon: <Camera size={40} color="var(--gold)" />,
     title: "Préparation",
     desc: "Shooting photo pro et création d'une annonce optimisée SEO.",
   },
   {
     num: "03",
-    icon: "🔑",
+    icon: <Key size={40} color="var(--gold)" />,
     title: "Gestion",
     desc: "Prise en charge totale : réservations, accueil et maintenance.",
   },
   {
     num: "04",
-    icon: "💰",
+    icon: <Banknote size={40} color="var(--gold)" />,
     title: "Revenus",
     desc: "Maximisez vos revenus locatifs en toute sérénité.",
   },

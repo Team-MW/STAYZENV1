@@ -3,6 +3,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
 import Marquee from "@/components/Marquee";
+import { TrendingUp, Hourglass, ShieldCheck } from "lucide-react";
 
 const PROPRIETAIRES_FAQ = [
   {
@@ -63,17 +64,17 @@ export default function ProprietairesPage() {
         <div className="container">
           <div className="services-grid">
             <div className="service-card reveal">
-              <div className="service-icon">📈</div>
+              <div className="service-icon"><TrendingUp size={48} color="var(--gold)" /></div>
               <h3>Plus de revenus</h3>
               <p>Optimisation continue des tarifs pour gagner jusqu'à 60% de plus qu'en location classique.</p>
             </div>
             <div className="service-card reveal" style={{ transitionDelay: '0.1s' }}>
-              <div className="service-icon">⏳</div>
+              <div className="service-icon"><Hourglass size={48} color="var(--gold)" /></div>
               <h3>Plus de temps</h3>
               <p>On s'occupe de tout : ménage, accueil, maintenance. Vous ne faites rien.</p>
             </div>
             <div className="service-card reveal" style={{ transitionDelay: '0.2s' }}>
-              <div className="service-icon">🧘</div>
+              <div className="service-icon"><ShieldCheck size={48} color="var(--gold)" /></div>
               <h3>Sérénité totale</h3>
               <p>Sélection rigoureuse des voyageurs et gestion des assurances incluse.</p>
             </div>

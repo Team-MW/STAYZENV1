@@ -58,9 +58,9 @@ export default function Footer() {
           </Link>
         </span>
         <div className="footer-socials">
-          <a href="#" target="_blank">INSTAGRAM</a>
-          <a href="#" target="_blank">LINKEDIN</a>
-          <a href="https://www.facebook.com/people/Stayzen-Conciergerie/pfbid02vf9qWM4zGRd6nNwKhKcqRJ61tCD3bznQyqTCj8959GCwcVzdSoMVPxqRmsXfpdDAl/?mibextid=wwXIfr&rdid=wNn5Xp9iDJBdur1z&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1bqh3oiKMX%2F%3Fmibextid%3DwwXIfr%26ref%3D1" target="_blank">FACEBOOK</a>
+          <a href="https://www.facebook.com/people/Stayzen-Conciergerie/pfbid02vf9qWM4zGRd6nNwKhKcqRJ61tCD3bznQyqTCj8959GCwcVzdSoMVPxqRmsXfpdDAl/?mibextid=wwXIfr&rdid=wNn5Xp9iDJBdur1z&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1bqh3oiKMX%2F%3Fmibextid%3DwwXIfr%26ref%3D1" target="_blank" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
         </div>
       </div>
     </footer>

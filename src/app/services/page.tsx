@@ -4,37 +4,38 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
 import Marquee from "@/components/Marquee";
+import { Camera, TrendingUp, Sparkles, MessageSquare, Wrench, Smartphone } from "lucide-react";
 
 const SERVICES_DETAILED = [
   {
     title: "Gestion d'Annonce",
     desc: "Nous créons une annonce captivante sur Airbnb, Booking et plus. Shooting photo pro inclus pour maximiser vos clics.",
-    icon: "📸",
+    icon: <Camera size={48} color="var(--gold)" />,
   },
   {
     title: "Optimisation des Prix",
     desc: "Nos outils de yield management ajustent vos tarifs quotidiennement selon la demande locale et les événements.",
-    icon: "📈",
+    icon: <TrendingUp size={48} color="var(--gold)" />,
   },
   {
     title: "Ménage & Blanchisserie",
     desc: "Nettoyage hôtelier rigoureux après chaque séjour. Nous fournissons des draps et serviettes de qualité premium.",
-    icon: "✨",
+    icon: <Sparkles size={48} color="var(--gold)" />,
   },
   {
     title: "Support Voyageurs 24/7",
     desc: "De la première question à la remise des clés, nous gérons toute la communication avec vos invités.",
-    icon: "💬",
+    icon: <MessageSquare size={48} color="var(--gold)" />,
   },
   {
     title: "Maintenance & Réparations",
     desc: "Un problème technique ? Notre équipe intervient rapidement pour assurer le confort de vos voyageurs.",
-    icon: "🛠️",
+    icon: <Wrench size={48} color="var(--gold)" />,
   },
   {
     title: "Tableau de Bord Propriétaire",
     desc: "Suivez vos réservations et vos revenus en temps réel via votre espace client dédié.",
-    icon: "📱",
+    icon: <Smartphone size={48} color="var(--gold)" />,
   },
 ];
 
