@@ -62,7 +62,7 @@ const STEPS = [
     num: "04",
     icon: "💰",
     title: "Revenus",
-    desc: "Encaissez vos loyers chaque mois en toute sérénité.",
+    desc: "Maximisez vos revenus locatifs en toute sérénité.",
   },
 ];
 
@@ -91,13 +91,12 @@ export default function Home() {
         </div>
         <div className="hero-content">
           <h1 className="reveal-text">
-            Gestion complète
+            Optimisez la rentabilité
             <br />
-            <span className="gold">Airbnb & Booking</span>
+            <span className="gold">de votre bien</span>
           </h1>
           <p className="hero-sub reveal" style={{ transitionDelay: '0.2s' }}>
-            Maximisez vos revenus locatifs sans lever le petit doigt. 
-            Service clé en main incluant maintenance et linge.
+            avec une gestion complète et un service clé en main
           </p>
           <div className="hero-actions reveal" style={{ transitionDelay: '0.4s' }}>
             <a href="/simulateur" className="btn-primary">
@@ -125,7 +124,9 @@ export default function Home() {
             {/* Card 1: Gestion Complète */}
             <div className="bento-card bento-large bento-cream reveal">
               <div className="bento-content">
-                <div className="bento-icon">🏠</div>
+                <div className="bento-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
                 <h3>Gestion Complète</h3>
                 <p>De la création d'annonce à la gestion des séjours, nous pilotons tout pour vous libérer l'esprit.</p>
               </div>
@@ -137,7 +138,9 @@ export default function Home() {
             {/* Card 2: Photos & Annonce */}
             <div className="bento-card bento-small bento-gold reveal" style={{ transitionDelay: '0.1s' }}>
               <div className="bento-content">
-                <div className="bento-icon">📸</div>
+                <div className="bento-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-camera"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="4"/></svg>
+                </div>
                 <h3>Photos & Annonce</h3>
                 <p>Shooting pro et SEO optimisé pour une visibilité maximale.</p>
               </div>
@@ -146,7 +149,9 @@ export default function Home() {
             {/* Card 3: Linge & Consommables */}
             <div className="bento-card bento-small bento-dark reveal" style={{ transitionDelay: '0.2s' }}>
               <div className="bento-content">
-                <div className="bento-icon">🧺</div>
+                <div className="bento-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shirt"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+                </div>
                 <h3>Linge & Kits</h3>
                 <p>Fourniture du linge hôtelier et des consommables.</p>
               </div>
@@ -155,7 +160,9 @@ export default function Home() {
             {/* Card 4: Maintenance */}
             <div className="bento-card bento-large bento-light reveal" style={{ transitionDelay: '0.3s' }}>
               <div className="bento-content">
-                <div className="bento-icon">🛠️</div>
+                <div className="bento-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-wrench"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </div>
                 <h3>Maintenance & Assistance</h3>
                 <p>Prise en charge rapide des petits tracas du quotidien pour garantir la satisfaction des voyageurs.</p>
               </div>
@@ -179,7 +186,7 @@ export default function Home() {
             <span className="section-label reveal-text">Notre Offre</span>
             <h2 className="section-title reveal-text" style={{ transitionDelay: '0.1s' }}>Une commission unique.</h2>
             <p className="section-desc reveal" style={{ margin: '0 auto 2rem', transitionDelay: '0.2s' }}>
-              Un tarif clair, tout inclus. Les frais de ménage sont à la charge du voyageur.
+              Un tarif clair, tout inclus.
             </p>
           </div>
           <div className="pricing-card" style={{ textAlign: 'left', padding: '3.5rem', maxWidth: '650px' }}>
@@ -196,7 +203,12 @@ export default function Home() {
               </li>
               <li>
                 <div>
-                  <strong>Création d'annonce</strong> <span style={{ color: 'var(--text-muted)' }}>( photos professionnelles inclus )</span>
+                  <strong>Création et optimisation de l'annonce avec photos professionnelles</strong>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>Fournitures de linge hôtelier</strong>
                 </div>
               </li>
               <li>
@@ -204,26 +216,24 @@ export default function Home() {
                   <strong>Stratégie de prix dynamique</strong>
                 </div>
               </li>
-              <li style={{ alignItems: 'flex-start' }}>
+              <li>
                 <div>
-                  <strong>Fourniture de linge hotelier</strong>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginTop: '0.3rem' }}>( renouvellement à notre charge en cas de dégradation etc )</div>
+                  <strong>Livret d'accueil numérique</strong>
                 </div>
               </li>
               <li>
                 <div>
-                  <strong>Consommable</strong>
+                  <strong>Gestion des réservations et communication avec les voyageurs</strong>
                 </div>
               </li>
               <li>
                 <div>
-                  <strong>Kit d'accueil voyageurs</strong> <span style={{ color: 'var(--text-muted)' }}>( café, dosette de lessive etc )</span>
+                  <strong>Préparation des séjours : linge hôtelier, consommables et kit d'accueil</strong>
                 </div>
               </li>
-              <li style={{ alignItems: 'flex-start' }}>
+              <li>
                 <div>
-                  <strong>Service de maintenance, prise en charge des problèmes courants</strong>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginTop: '0.3rem' }}>( dégradation, plomberie, électroménager, etc. )</div>
+                  <strong>Maintenance et gestion des problèmes techniques</strong>
                 </div>
               </li>
             </ul>

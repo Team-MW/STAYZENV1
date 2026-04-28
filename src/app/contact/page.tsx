@@ -39,38 +39,18 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div style={{ marginTop: '5rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem' }}>
-            <div className="service-card reveal">
-              <h3 style={{ marginBottom: '1.5rem' }}>Informations</h3>
-              <ul style={{ listStyle: 'none' }}>
-                <li style={{ marginBottom: '1.5rem' }}>
-                  <span style={{ color: 'var(--gold)', fontWeight: 700, display: 'block' }}>Email</span>
-                  <a href="mailto:contact@stayzen.fr" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>contact@stayzen.fr</a>
-                </li>
-                <li style={{ marginBottom: '1.5rem' }}>
-                  <span style={{ color: 'var(--gold)', fontWeight: 700, display: 'block' }}>Téléphone</span>
-                  <a href="tel:+33600000000" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>06 00 00 00 00</a>
-                </li>
-                <li>
-                  <span style={{ color: 'var(--gold)', fontWeight: 700, display: 'block' }}>Siège</span>
-                  <p style={{ color: 'var(--text-secondary)' }}>Paris, France</p>
-                </li>
-              </ul>
-            </div>
-
-            <div className="reveal" style={{ transitionDelay: '0.1s' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem', marginTop: '5rem' }}>
+            {/* Calendly */}
+            <div className="reveal">
               <div style={{ 
                 background: 'var(--light-card-bg)', 
                 borderRadius: '32px', 
-                height: '100%', 
-                minHeight: '400px',
+                padding: '2rem',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center',
-                textAlign: 'center',
-                padding: '2rem'
+                justifyContent: 'center'
               }}>
-                <div style={{ width: '100%', height: '100%', minHeight: '700px', background: 'transparent' }}>
+                <div style={{ width: '100%', minHeight: '700px', background: 'transparent' }}>
                   <div 
                     className="calendly-inline-widget" 
                     data-url="https://calendly.com/desosocalendly/30min" 
@@ -82,6 +62,25 @@ export default function ContactPage() {
                   />
                 </div>
               </div>
+            </div>
+
+            {/* Informations */}
+            <div className="service-card reveal" style={{ maxWidth: '800px', width: '100%', margin: '0 auto' }}>
+              <h3 style={{ marginBottom: '2rem', textAlign: 'center' }}>Informations</h3>
+              <ul style={{ listStyle: 'none', display: 'flex', justifyContent: 'space-around', gap: '2rem', flexWrap: 'wrap' }}>
+                <li style={{ textAlign: 'center' }}>
+                  <span style={{ color: 'var(--gold)', fontWeight: 700, display: 'block', marginBottom: '0.5rem' }}>Email</span>
+                  <a href="mailto:contact@stayzen.fr" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>contact@stayzen.fr</a>
+                </li>
+                <li style={{ textAlign: 'center' }}>
+                  <span style={{ color: 'var(--gold)', fontWeight: 700, display: 'block', marginBottom: '0.5rem' }}>Téléphone</span>
+                  <a href="tel:+33686253611" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>06 86 25 36 11</a>
+                </li>
+                <li style={{ textAlign: 'center' }}>
+                  <span style={{ color: 'var(--gold)', fontWeight: 700, display: 'block', marginBottom: '0.5rem' }}>Siège</span>
+                  <p style={{ color: 'var(--text-secondary)' }}>Paris, France</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

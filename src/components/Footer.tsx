@@ -44,7 +44,7 @@ export default function Footer() {
           <h4>Contact</h4>
           <ul>
             <li><a href="mailto:contact@stayzen.fr">contact@stayzen.fr</a></li>
-            <li><a href="tel:+33600000000">06 00 00 00 00</a></li>
+            <li><a href="tel:+33686253611">06 86 25 36 11</a></li>
             <li><Link href="/contact">Prendre RDV</Link></li>
           </ul>
         </div>
@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="footer-socials">
           <a href="#" target="_blank">INSTAGRAM</a>
           <a href="#" target="_blank">LINKEDIN</a>
-          <a href="#" target="_blank">FACEBOOK</a>
+          <a href="https://www.facebook.com/people/Stayzen-Conciergerie/pfbid02vf9qWM4zGRd6nNwKhKcqRJ61tCD3bznQyqTCj8959GCwcVzdSoMVPxqRmsXfpdDAl/?mibextid=wwXIfr&rdid=wNn5Xp9iDJBdur1z&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1bqh3oiKMX%2F%3Fmibextid%3DwwXIfr%26ref%3D1" target="_blank">FACEBOOK</a>
         </div>
       </div>
     </footer>
