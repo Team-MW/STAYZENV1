@@ -50,11 +50,11 @@ export default function ContactPage() {
                 alignItems: 'center',
                 justifyContent: 'center'
               }}>
-                <div style={{ width: '100%', minHeight: '700px', background: 'transparent' }}>
+                <div style={{ width: '100%', background: 'transparent' }}>
                   <div 
                     className="calendly-inline-widget" 
                     data-url="https://calendly.com/desosocalendly/30min" 
-                    style={{ minWidth: '320px', height: '100%', width: '100%' }}
+                    style={{ minWidth: '320px', height: '800px', width: '100%' }}
                   ></div>
                   <Script 
                     src="https://assets.calendly.com/assets/external/widget.js" 
