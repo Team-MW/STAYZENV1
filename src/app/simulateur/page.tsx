@@ -93,21 +93,44 @@ export default function SimulatorPage() {
               <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '2.5rem' }}>Incluant</p>
               
               <ul className="pricing-features" style={{ margin: 0 }}>
-                <li><div><strong>Gestion complète de conciergerie</strong></div></li>
-                <li><div><strong>Création d'annonce</strong> <span style={{ color: 'var(--text-muted)' }}>( photos professionnelles inclus )</span></div></li>
-                <li><div><strong>Stratégie de prix dynamique</strong></div></li>
-                <li style={{ alignItems: 'flex-start' }}>
+                <li>
                   <div>
-                    <strong>Fourniture de linge hotelier</strong>
-                    <div style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginTop: '0.3rem' }}>( renouvellement à notre charge en cas de dégradation etc )</div>
+                    <strong>Gestion complète de conciergerie</strong>
                   </div>
                 </li>
-                <li><div><strong>Consommable</strong></div></li>
-                <li><div><strong>Kit d'accueil voyageurs</strong> <span style={{ color: 'var(--text-muted)' }}>( café, dosette de lessive etc )</span></div></li>
-                <li style={{ alignItems: 'flex-start' }}>
+                <li>
                   <div>
-                    <strong>Service de maintenance, prise en charge des problèmes courants</strong>
-                    <div style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginTop: '0.3rem' }}>( dégradation, plomberie, électroménager, etc. )</div>
+                    <strong>Création et optimisation de l'annonce avec photos professionnelles</strong>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Fournitures de linge hôtelier</strong>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Stratégie de prix dynamique</strong>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Livret d'accueil numérique</strong>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Gestion des réservations et communication avec les voyageurs</strong>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Préparation des séjours : linge hôtelier, consommables et kit d'accueil</strong>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>Maintenance et gestion des problèmes techniques</strong>
                   </div>
                 </li>
               </ul>
